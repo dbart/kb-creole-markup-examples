@@ -1,0 +1,56 @@
+* https://mariadb.com/kb/en/meta/images-and-attachments/
+
+To add an image or attach a file to an article, first upload  it using the "Edit" link in the "Attachments" section of the sidebar.
+
+When uploading the file you will be prompted to give it a "slug" or name. You can use letters, numbers, and dashes (-) in the name. After it is uploaded, you can refer to it with:
+
+<<code>>
+{{name}}
+<</code>>
+
+== Attachments
+For example, I've attached a pdf document that I've named "mariadb-seal-pdf". I can add a link to this document with:
+
+<<code>>
+{{mariadb-seal-pdf}}
+<</code>>
+
+Which shows up like so:
+
+{{mariadb-seal-pdf}}
+
+You can also provide alt-text, like with [[creole-formatting#links|links]]. For example, I can change the displayed text for the attachment above like so:
+
+<<code>>
+{{mariadb-seal-pdf|The MariaDB seal logo (in pdf format)}}
+<</code>>
+
+Which shows up like so:
+
+{{mariadb-seal-pdf|The MariaDB seal logo (in pdf format)}}
+
+== Images
+
+I've attached an image named "mariadb" to this article and if I use the following code:
+
+<<code>>
+{{mariadb}}
+<</code>>
+
+The image is shown like so:
+
+{{mariadb}}
+
+=== Advanced Image Formatting
+
+To control the size an image is displayed or make it link to another page or url you can use the image macro.
+
+<<code>>
+<<image slug=mariadb width=50 height=50 href="http://mariadb.org" alt="MariaDB Foundation">>
+<</code>>
+
+Which displays like: 
+
+<<image slug=mariadb width=50 height=50 href="http://mariadb.org" alt="MariaDB Foundation">>
+
+You can also pass a "style" or "class" parameter if you need custom css.

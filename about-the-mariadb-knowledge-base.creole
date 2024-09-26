@@ -1,0 +1,44 @@
+* https://mariadb.com/kb/en/meta/about-the-mariadb-knowledge-base/
+
+<<toc>>
+The MariaDB Knowledge Base is a repository for all [[mariadb|MariaDB]] related information,
+as well as information about tools and other software that works with MariaDB.
+
+Anyone can contribute to the Knowledge Base after [[https://mariadb.com/login|logging in]]. Once you are logged in, you can ask questions, edit pages, or create new pages.
+
+==== Purpose
+
+The MariaDB Knowledge Base serves as the primary documentation for the open source
+database [[mariadb|MariaDB]].  Readers may also ask and answer questions about MariaDB software. Where possible, all content is dual-licensed under the Creative Commons By Attribution Share Alike clause, and the GFDL. Some content (e.g. the content from the MariaDB source code and man pages) is used and licensed under the terms of the GPLv2. <<ref>>Learn more about how [[https://mariadb.com/kb/en/about/+license/|licensing]] in the Knowledge Base works.<</ref>>
+
+==== Organization
+
+The Knowledge Base is laid out in a tree structure. When a user has a question, they are
+encouraged to navigate the Knowledge Base tree to where they think the answer
+should be. If the answer is not there, the user can ask a question from that
+page. If the answer exists somewhere else in the Knowledge Base, the answer to
+the question is linked to the page the user went to. If the answer doesn't
+exist, members of the [[community|MariaDB community]] answer it. The answer to
+the user's question will then be in a good (and hopefully logical) location
+ready for the next time a user visits the Knowledge Base with the same question.
+
+The goal is for the Knowledge Base to be a replacement for Forums, email lists
+(when asking for help), FAQ.
+
+==== Implementation
+
+The Knowledge Base is written in Django with a MariaDB database on the back end. The Knowledge Base code is planned to be released as GPL as soon as it's stabilized.
+
+==== Contributing
+
+The [[contributing-to-the-mariadb-knowledge-base|Contributing to the MariaDB Knowledge Base]] page has information on how you can help make this Knowledge Base of knowledge and information better.
+
+Contribution statistics from all users can be viewed here: https://mariadb.com/kb/stats/users/
+
+==== See also
+
+* An article on GNU project's website: [[https://www.gnu.org/philosophy/free-doc.html|Why Free Software needs Free Documentation]]
+
+==== Notes
+
+<<references>>

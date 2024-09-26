@@ -1,0 +1,57 @@
+* https://mariadb.com/kb/en/meta/the-style-macro/
+
+=== Syntax
+
+{{{<<style [class="class-name"] [style="css-styles"] [force_div=True]>>
+Styled text goes here.
+<</style>>}}}
+
+=== About
+The {{{<<style>>}}} macro allows you to add CSS styles and classes to text, tables, and other items. One of the main ways to do this is through the [[box-styles|Box Styles]] and [[html-table-styles|HTML Table Styles]] that are available, but you can also add custom CSS styles.
+
+There is also the ability to embed styles within styles. For this, there are aliases of the style macro labeled style2 through style5. When using one of the style aliases, be sure to use it when opening and closing. For example: {{{<<style3>>something<</style3>>}}}
+
+##force_div=True## is for times when, for one reason or another, the Creole parser gets confused and doesn't quite format things correctly. This option can fix some of those errors.
+
+=== Examples
+Below are some examples of how the styles of text may be changed.
+
+==== Text color
+If you want to change the color of some text in particular, for a block of text (e.g, a paragraph) or for text in-line, you would use the style parameter of the {{{<<style>>}}} tag.  Below is an example in which the some text is to a different color than the default:
+
+<<fixed>>
+A good color to use for that text might be {{{<<style style="color: cornflowerblue;">>cornflower blue<</style>>}}}, but {{{<<style style="color: tomato;">>tomato<</style>>}}} is more noticeable.
+<</fixed>>
+
+The above paragraph would display like this:
+
+<<fixed>>
+A good color to use for that text might be <<style style="color: cornflowerblue;">>cornflower blue<</style>>, but <<style style="color: tomato;">>tomato<</style>> is more noticeable.
+<</fixed>>
+
+==== Embedded Styles
+You may embed styles within styles.  When doing this, number them to distinguish them from each other.  Below is an example of how you might change the colors of text within styled text:
+{{{<<style style="color:green;">>Green text,
+    <<style2 style="color:red;">>then red,
+        <<style3 style="color:blue;">>then blue,<</style3>>
+    then back to red,<</style2>>
+and finally back to green.<</style>>}}}
+
+This will display like so:
+
+<<fixed>>
+<<style style="color:green;">>Green text,
+    <<style2 style="color:red;">>then red,
+        <<style3 style="color:blue;">>then blue,<</style3>>
+    then back to red,<</style2>>
+and finally back to green.<</style>>
+<</fixed>>
+
+==== Table backgrounds
+{{{
+=|=Heading1 |=Heading2 |
+|=Heading3 |<<style style=" width: 100%; text-align: center; background-color: lightcoral">> - <</style>>|<<style style=" width: 100%; text-align: center; background-color: mediumseagreen">> x <</style>>|
+}}}
+displays as:
+|=|=Heading1 |=Heading2 |
+|=Heading3 |<<style style=" width: 100%; text-align: center; background-color: lightcoral">> - <</style>>|<<style style=" width: 100%; text-align: center; background-color: mediumseagreen">> x <</style>>|

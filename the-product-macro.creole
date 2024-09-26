@@ -1,0 +1,66 @@
+* https://mariadb.com/kb/en/meta/the-product-macro/
+
+== Syntax
+
+{{{
+<<product {mariadb | mysql | maxscale} { version=# | from=# | to=# } [indent=L]>>
+}}}
+
+* ##from## and ##to## may be combined.
+* replace {{{#}}} with the MariaDB/MySQL version you are specifying
+* For ##indent##, replace //L// with the indent **l**evel you want
+  (corresponds to [[lists|list indent levels]])
+
+== About
+
+The {{{<<product>>}}} macro allows sections of articles to be marked as applying to a specific product and version.
+
+When using the {{{<<product>>}}} macro, a **Product Versions** menu will also appear
+in the sidebar listing all products that appear in the article and allow you to
+highlight them (by <<style style="color: #AAA;">>graying<</style>> out other versions).
+
+== Examples
+
+=== //Version// example
+<<code indent=1>>
+<<product mariadb version=5.5.24>>
+This only applies to **MariaDB** version 5.5.24.
+<</product>>
+<</code>>
+> Renders as:
+<<product mariadb version=5.5.24 indent=1>>
+This only applies to **MariaDB** version 5.5.24.
+<</product>>
+
+=== //From// example
+<<code indent=1>>
+<<product mariadb from=10.8>>
+This applies to **MariaDB** 10.8 and up.
+<</product>>
+<</code>>
+> Renders as:
+<<product mariadb from=10.8 indent=1>>
+This applies to **MariaDB** 10.8 and up.
+<</product>>
+
+=== //To// example
+<<code indent=1>>
+<<product mariadb to=10.2>>
+This applies up to **MariaDB** version 10.2.
+<</product>>
+<</code>>
+> Renders as:
+<<product mariadb to=10.2 indent=1>>
+This applies up to **MariaDB** version 10.2.
+<</product>>
+
+=== //From To// example
+<<code indent=1>>
+<<product mysql from=3.23 to=5>>
+This applies to **MySQL** 3.23 to 5
+<</product>>
+<</code>>
+> Renders as:
+<<product mysql from=3.23 to=5 indent=1>>
+This applies to **MySQL** 3.23 to 5
+<</product>>

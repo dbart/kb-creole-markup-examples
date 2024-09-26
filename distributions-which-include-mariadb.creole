@@ -1,0 +1,76 @@
+* https://mariadb.com/kb/en/distributions-which-include-mariadb/
+
+<<toc>>
+The following is a partial list of distributions which include MariaDB in their package repositories. For these you can use the distribution's management system to install MariaDB.
+
+The term "default" in the list below refers to the distribution's default relational or MySQL-type database.
+
+== Linux Distributions
+* [[https://almalinux.org/|AlmaLinux]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> MariaDB 10.5 was included since 8.8.<</style>>
+* [[https://www.alpinelinux.org/|Alpine Linux]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> Defaults to MariaDB. MariaDB 10.6 has been available 3.12.11 and MariaDB 10.11 since 3.18.2.<</style>>
+* [[https://4mlinux.com|4mLinux]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> Defaults to MariaDB. MariaDB 10.6 has been available [[http://4mlinux-releases.blogspot.com/2022/03/4mlinux-390-stable-released.html|since 37.0]]<</style>>
+* [[https://packages.altlinux.org/en/Sisyphus/srpms/mariadb|ALT Linux]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> MariaDB 5.5 included in 7.0.0, MariaDB is default from 8.1, which includes MariaDB 10.1, 9.1 includes MariaDB 10.4<</style>>
+* [[https://www.archlinux.org/news/mariadb-replaces-mysql-in-repositories/|Arch Linux]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> Features MariaDB 10.11, and replaced MySQL as a default<</style>>
+* [[http://cyti.latgola.lv/ruuni/|Austrumi]]<<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> Defaulted to MariaDB 5.3 in 2.4.8, 3.5.8 includes MariaDB 10.1<</style>>
+* [[http://blackarch.org/|BlackArch]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> Defaulted to MariaDB 5.5 in 2014.07.01, 2020.12.01 includes MariaDB 10.5<</style>>
+* [[http://www.blueonyx.it/|BlueOnyx]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> 5209 defaults to MariaDB 5.5, 5210R to MariaDB 10.3<</style>>
+* [[http://bluestarlinux.sourceforge.net/|BlueStar]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> 4.8.4 defaults to MariaDB 10.1, 5.4.2 to MariaDB 10.5<</style>>
+* [[https://wiki.centos.org/About/Product/|CentOS]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> MariaDB 5.5 replaced MySQL in CentOS 7<</style>>
+* [[https://chakraos.org/|The Chakra Project]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> MariaDB replaced MySQL as default in 2013.05. 2016.02 includes MariaDB 10.1<</style>>
+* [[https://www.debian.org/|Debian]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> Debian 10 "Buster" includes MariaDB 10.3, Debian 11 "Bullseye" MariaDB 10.5, Debian 12 "Bookworm" MariaDB 10.11 as default.<</style>>
+* [[http://www.elastix.org/|Elastix]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Defaulted to MariaDB 5.5 in 4.0.76<</style>>
+* [[http://exherbo.org/|Exherbo]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Includes MariaDB 10.4<</style>>
+* [[https://getfedora.org/|Fedora]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> MariaDB 5.5 became the default relational database in Fedora 19. Fedora 30 [[https://bodhi.fedoraproject.org/updates/?packages=mariadb&page=1|includes MariaDB 10.3]], Fedora 34 [[https://fedoraproject.org/wiki/Releases/34/ChangeSet#MariaDB_10.5|includes MariaDB 10.5]].<</style>>
+* [[http://www.funtoo.org/|Funtoo]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Includes MariaDB 5.5<</style>>
+* [[https://packages.gentoo.org/packages/dev-db/mariadb|Gentoo Linux]]
+* [[https://www.gnu.org/software/guix/|Guix]]<<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>11.2.0 includes MariaDB 10.1<</style>>
+* [[http://www.hanthana.org/|Hanthana]]<<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> 19.1 defaulted to MariaDB 5.5, 21 includes MariaDB 10.0, 28.1.2 includes MariaDB 10.2, 30 includes MariaDB 10.3<</style>> 
+* [[http://kaosx.us/|KaOS]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Defaulted to MariaDB 5.5 in 2014.12, 2019.04 includes MariaDB 10.3<</style>>
+* [[https://www.kali.org/|Kali Linux]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>2017.3 Included MariaDB 10.1, 2023.1 includes MariaDB 10.11<</style>>
+* [[http://www.linux-kdu.com.br/|GNU/Linux KDu]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> MariaDB 5.5 replaced MySQL as a default in 2.0 Final.<</style>>
+* [[https://kororaproject.org/|Korora]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Defaulted to MariaDB in 19.1, 26 includes MariaDB 10.1<</style>>
+* [[http://www.linuxfromscratch.org/|Linux from Scratch]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>10.1-BLFS defaults to MariaDB 10.5<</style>>
+* [[http://www.lunar-linux.org/|Lunar]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>1.7.0 includes MariaDB 5.5, Moonbase includes MariaDB 10.5<</style>>
+* [[https://www.mageia.org/|Mageia]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> MariaDB 5.5 replaced MySQL as default in version 3, MariaDB 10.3 from version 7.1, MariaDB 10.5 from 8, MariaDB 10.11 from 9.<</style>>
+* [[https://manjaro.github.io/|Manjaro Linux]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> Defaulted to MariaDB 5.5 in 0.8.11, 16.10.3 includes MariaDB 10.1.<</style>>
+* [[http://nixos.org/|NixOS]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>14.0.4.630 included MariaDB 10.0, 18.09 includes MariaDB 10.2, Stable includes MariaDB 10.5<</style>>
+* [[http://www.networksecuritytoolkit.org/|Network Security Toolkit]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>20-5663 defaulted to MariaDB 5.5, 32-11992 includes MariaDB 10.4<</style>>
+* [[http://www.nutyx.org/|NuTyX]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>14.11 included MariaDB 10.0, defaulted to MariaDB 10.1 in 8.2.1, 20.12.1 includes MariaDB 10.5<</style>>
+* [[http://news.softpedia.com/news/openelec-8-0-3-embedded-linux-entertainment-os-adds-mesa-17-0-5-and-linux-4-9-25-515302.shtml|OpenELEC]] 
+* [[https://openeuler.org/en/|OpenEuler]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>21.9 includes [[https://repo.openeuler.org/openEuler-21.09/source/Packages/|10.5]],  22.03 LTS [[https://repo.openeuler.org/openEuler-22.03-LTS/source/Packages/|includes MariaDB 10.5]]<</style>>
+* [[http://openmandriva.org/|Open Mandriva]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Defaulted to MariaDB 10.0 in 2014.2, includes MariaDB 10.5 in 4.2<</style>>
+* [[https://en.opensuse.org/Portal:MySQL|openSUSE]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> MariaDB 5.5 became the default relational database in [[https://blog.mariadb.org/opensuse-12-3-released-with-mariadb-as-default|openSUSE 12.3]], and MariaDB 10.6 the default since 15.5<</style>>
+* [[http://www.oracle.com/us/technologies/linux/index.html|Oracle Linux]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> 7.3 includes MariaDB 5.5. 8.0 includes MariaDB 10.3<</style>>
+* [[http://www.paldo.org/|Paldo]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Defaults to MariaDB 10.5 in Stable<</style>>
+* [[https://www.parabola.nu/packages/?q=mariadb|Parabola GNU/Linux]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Includes MariaDB 10.1 since 3.7<</style>>
+* [[http://www.parrotsec.org/|Parrot Security]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Based on  Debian's testing branch (stretch), Parrot Security switched from MySQL to MariaDB 10.0 in 3.1, 4.7 includes MariaDB 10.3<</style>>
+* [[http://partedmagic.com/|Parted Magic]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Defaulted to MariaDB 5.5 in 2015_11_13<</style>>
+* [[http://www.pclinuxos.com/forum/index.php?topic=140029.0|PCLinuxOS]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Replaced MySQL with MariaDB 10.1 in 2017.03<</style>>
+* [[http://www.pisilinux.org/|Pisi Linux]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Defaulted to MariaDB 10.0 in 1.1<</style>>
+* [[http://www.plamolinux.org/|Plamo]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Defaulted to MariaDB 5.5 in 5.3.1, 7.3 includes MariaDB 10.2<</style>>
+* [[http://www.poliarch.org/|PoliArch]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Defaulted to MariaDB 5.5 in 13.1, 15.1 includes MariaDB 10.0<</style>>
+* [[https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux|Red Hat Enterprise Linux]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> MariaDB 5.5 was included as  the default "MySQL" database since RHEL 7, RHEL 9 includes MariaDB 10.5<</style>>
+* [[https://rockylinux.org|Rocky Linux]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> MariaDB 10.5 was included since 8.7.<</style>>
+* [[http://www.rosalab.com/|ROSA]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Defaulted to MariaDB 10.0 in R4 and MariaDB 10.1 in R9.<</style>>
+* [[http://www.sabayon.org/|Sabayon]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Included MariaDB 10.0 in 14.12, includes MariaDB 10.3 since 19.03<</style>>
+* [[https://www.scientificlinux.org/|Scientific Linux]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Defaulted to MariaDB 5.5 in 7.3<</style>>
+* [[https://slackbuilds.org/apps/mariadb/|Slackware]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> MariaDB 5.5 replaced MySQL as default in 14.1. 15.0 includes MariaDB 10.5, current includes MariaDB 10.11<</style>>
+* [[http://www.slitaz.org/|SliTaz GNU/Linux]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Includes MariaDB 10.0 in 5.0-rolling<</style>>
+* [[https://wiki.contribs.org/SME_Server:10.0|SME Server]]<<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> started to use MariaDB 5.5 from 10.0<</style>>
+* [[http://springdale.math.ias.edu/|Springdale Linux]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>Defaulted to MariaDB 5.5 in 7.2, 8.1 includes MariaDB 10.3<</style>>
+* [[http://www.sulix.hu/|SuliX]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> Defaults to MariaDB 5.5 in 8.<</style>>
+* [[https://www.suse.com|SUSE Linux Enterprise]]  <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> MariaDB 10.6 is the default relational database option on 15-SP6<</style>>
+* [[https://wiki.ubuntu.com/Releases/|Ubuntu]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>MariaDB 5.5 was included in Trusty Tahr 14.04. 20.04 [[http://packages.ubuntu.com/focal/mariadb-server-10.3|includes MariaDB 10.3]], and 22.04 [[https://packages.ubuntu.com/jammy/database/|includes 10.6]].<</style>>
+* [[http://www.voidlinux.eu/|Void]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> [[https://voidlinux.org/packages/|Includes MariaDB 10.5 in current]]<</style>>
+* [[http://www.wifislax.com/|Wifislax]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> Defaulted to MariaDB 10.0 in 4.11.1<</style>>
+
+== BSD Distributions
+* [[https://www.dragonflybsd.org/|Dragonfly BSD]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> 3.8 included MariaDB 5.5. 5.8.0 includes MariaDB 10.4.<</style>>
+* [[https://svnweb.freebsd.org/ports/head/databases/#mariadb100-client|FreeBSD]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> MariaDB is available in the ports tree and the FreeBSD Manual has instructions on [[https://www.freebsd.org/doc/en/books/handbook/ports.html|Installing Applications: Packages and Ports]]. MariaDB 10.5 is included in 12.2<</style>>
+** [[https://www.freshports.org/search.php?query=mariadb|MariaDB on FreshPorts]]
+* [[https://www.netbsd.org/|NetBSD]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> 6.1 and 7.0 include MariaDB 5.5.<</style>>
+* [[https://marc.info/?m=141063182731679|OpenBSD]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> MariaDB 10.0 was included in 5.7, 6.8 includes MariaDB 10.5.<</style>>
+
+== macOS
+* [[http://brew.sh/|Homebrew]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>> If you have Homebrew installed, you can install MariaDB Server by executing ##brew install mariadb##. Find out more at [[installing-mariadb-on-macos-using-homebrew| Installing MariaDB Server on macOS Using Homebrew]].<</style>>
+* [[https://www.macports.org/|MacPorts]] <<style style="font-size:0.8em;color:gray;">><<entity>>mdash<</entity>>This provides [[https://trac.macports.org/browser/trunk/dports/databases/mariadb/Portfile|mariadb and mariadb-server]]. A [[http://yosun.me/2012/04/13/mariadb-via-macports-on-mac-os-x-10-6/|quick guide]] on how to install it.<</style>>

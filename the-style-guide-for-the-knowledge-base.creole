@@ -1,0 +1,85 @@
+* https://mariadb.com/kb/en/meta/the-style-guide-for-the-knowledge-base/
+
+<<toc>>
+All new articles are to be written in English. This does not mean that we believe the content should only be available in English. We would like the content to be available in as many languages as possible. However, in order to verify the accuracy of a new article, it first needs to be written in English, preferably in U.S. English.
+
+As long as the content is accurate, don't be afraid of poor English or not understanding all of the markup conventions<<entity>>mdash<</entity>>someone else will correct what you write.  Your creativity and expertise is what matters.  Write text that is not overly complex and is easily understood by second-language English readers.
+
+
+=== Titles and Meta Text
+
+The titles of articles and categories should be succinct and not a phrase or sentence.  Unless you're creating an [[faq|FAQ]], a title should not be in the form of a question. Titles for categories and articles at every level should be written in title case (for example ##Server System Variables##, not ##Server system variables##). Do not capitalize short function words such as //to//, //the//, and //and//.
+
+Titles should not contain any type of formatting.
+
+Each category and article should have an //Excerpt//. When creating or editing an article, you'll see a box for entering an excerpt. This is meant to be a brief description of the article that is visible on the parent category page.  An excerpt should be a short sentence or a fragment of a sentence, ending with a period. Never use exclamation points in titles or excerpts. Excerpts should fit in their entirety on the category page listing and should not be cut off by ellipses. 
+
+=== Contents
+
+Most pages should have a table of contents. Embed the {{{<<toc>>}}} macro to add one. See [[the-toc-macro]] for details.
+
+=== References and Links
+
+Use links generously to relate content on the Knowledge Base. Links should be embedded in relevant text, for example:
+
+"The [[xtradbinnodb-server-system-variables/#innodb_buffer_pool_filename|innodb_buffer_pool_filename]] system variable" 
+
+rather than 
+
+"The innodb_buffer_pool_filename system variable".
+
+Related links should also be added to a See Also section.
+
+Category pages which contain links to many other documents should be grouped into sub-categories that are embedded into the main document. Sub-categories should be listed below articles linked directly on the category page.
+
+When creating links to JIRA tasks in the Knowledge Base, do not use absolute references. The KB will automatically create a link using their "mdev" number. For example, the text '{{{mdev-191}}}', when entered into the Knowledge Base becomes: mdev-191.
+
+=== Formatting and Highlighting
+
+All referenced SQL statements and functions should be linked to their respective page of the documentation.
+
+Reserved words should always be typed in all capital letters, while the names of databases, tables, and columns should be in all lower-case letters.
+
+SQL elements should preferably use the [[sql-code-blocks-sql|SQL macro]]. Other code elements, or SQL that formats poorly (such as SQL using /G) should use the [[code-blocks-code|Code macro]].
+
+See [[editing-help|Editing Help]] for more help with formatting. 
+
+=== Content and Word Usage
+
+Never use exclamation points and try avoiding question marks in the content of articles.
+
+=== Versioning
+The Knowledge Base contains all information for all currently-supported versions. The [[the-product-macro|product macro]] should be used to enclose information only applicable to a particular release. [[the-product-macro|Product macros]] pertaining to old, unsupported releases should be removed from the text to avoid cluttering pages with unnecessary information.
+
+=== Examples
+
+Embed code samples in the appropriate [[meta/macros|macro]], such as the [[the-code-macro|code macro]] (for general syntax, code) or the [[the-sql-macro|sql macro]] (for SQL).
+
+When showing examples involving SQL statements, don't include the leading prompts (e.g., ##MariaDB [test]>##  or  ##->##).  This will make the results easier to read and easier for readers to copy and paste the content to their computer. 
+
+Output that's not necessary for the example can also be removed for brevity, such as ##1 row in set (0.000 sec)##.
+
+For example:
+<<sql>>
+SELECT 1;
++---+
+| 1 |
++---+
+| 1 |
++---+
+<</sql>>
+rather than
+<<sql>>
+mysql [localhost] {msandbox} ((none)) > SELECT 1;
++---+
+| 1 |
++---+
+| 1 |
++---+
+1 row in set (0.000 sec)
+<</sql>>
+
+
+Capitalize all reserved words within an example, including smaller words (e.g., ##AS##, ##AND##).  Don't try to highlight or italicize any of the text<<entity>>mdash<</entity>>nor add comments in-line, within examples.  Instead, describe the example before or after it. All examples should be explained.  Don't assume that the reader understands the key information contained within the example.
+
+Try avoiding examples that are wide enough for the reader to use the horizontal scroll-bar.  Instead, break the code or SQL statements, as well as error messages into multiple lines. When doing so for command-line examples, add the ##\## that you would use in a shell.  If appropriate, say in the text that follows the example that you have adjusted the results for better formatting. For results tables that are too wide but are for only one row, try using the ##\G## delimiter for getting narrower results.
